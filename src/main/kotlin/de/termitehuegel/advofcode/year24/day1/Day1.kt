@@ -1,4 +1,4 @@
-package de.termitehuegel.advofcode.year24
+package de.termitehuegel.advofcode.year24.day1
 
 import java.io.FileInputStream
 import java.io.InputStream
@@ -39,8 +39,8 @@ fun main() {
     val input = "src/main/resources/input.txt" // Input files are not provided in this repo
     val parsedInput = parse(FileInputStream(input))
 
-    var result: Int = 0;
-    var duration: Long = 0L;
+    var result: Int = 0
+    var duration: Long = 0L
 
     // Solving Part One
     duration = measureTimeMillis {
