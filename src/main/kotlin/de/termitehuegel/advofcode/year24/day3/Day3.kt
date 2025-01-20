@@ -36,11 +36,11 @@ fun main() {
     duration = measureTimeMillis {
         result = multiply(parsedInput)
     }
-    println("Calculated the number of safe reports as $result in ${duration}ms")
+    println("Calculated the number as $result in ${duration}ms")
 
     // Solving Part Two
     duration = measureTimeMillis {
         result = multiplyConditional(parsedInput)
     }
-    println("Calculated the number of safe reports when the dampener is taken into account as $result in ${duration}ms")
+    println("Calculated the number with conditionals as $result in ${duration}ms")
 }
