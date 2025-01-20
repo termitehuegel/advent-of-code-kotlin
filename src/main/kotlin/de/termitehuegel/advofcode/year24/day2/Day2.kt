@@ -6,7 +6,7 @@ import kotlin.system.measureTimeMillis
 
 
 fun parse(input: InputStream): List<List<Int>> {
-     return input.reader().readLines().map { line -> line.split(" ").map { it.toInt() } }
+    return input.reader().readLines().map { line -> line.split(" ").map { it.toInt() } }
 }
 
 fun safe(report: List<Int>): Boolean {

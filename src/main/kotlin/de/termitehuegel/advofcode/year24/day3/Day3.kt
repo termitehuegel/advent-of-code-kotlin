@@ -11,7 +11,7 @@ fun parse(input: InputStream): String {
 
 fun multiply(corruptedMemory: String): Int {
     return Regex("mul\\(([1-9][0-9]{0,2}),([1-9][0-9]{0,2})\\)").findAll(corruptedMemory)
-        .sumOf { match -> match.groupValues[1].toInt()  * match.groupValues[2].toInt() }
+        .sumOf { match -> match.groupValues[1].toInt() * match.groupValues[2].toInt() }
 }
 
 fun multiplyConditional(corruptedMemory: String): Int {
